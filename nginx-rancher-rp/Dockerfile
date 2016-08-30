@@ -32,7 +32,7 @@ RUN chmod u+x /app/docker-entrypoint.sh
 ENV RANCHER_METADATA_HOST http://rancher-metadata/
 ENV RANCHER_VERSION v1
 
-VOLUME ["/etc/nginx/certs"]
+VOLUME ["/etc/nginx/certs", "/etc/nginx/vhost.d"]
 
 ENTRYPOINT ["/app/docker-entrypoint.sh"]
 # CMD ["forego", "start", "-r"]
