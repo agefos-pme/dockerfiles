@@ -26,6 +26,8 @@ RUN echo "daemon off;" >> /etc/nginx/nginx.conf \
 COPY . /app/
 WORKDIR /app/
 
+RUN chmod u+x /app/docker-entrypoint.sh
+
 ENV RANCHER_METADATA_HOST http://rancher-metadata/
 ENV RANCHER_VERSION v1
 
