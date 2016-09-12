@@ -13,3 +13,9 @@ Pour tester les images créées:
 ```sh
 $ docker run --rm -it agefos-pme/nginx-rancher-rp
 ```
+
+Une fois l'image validée, on peut la pousser dans la registry.
+```sh
+$ docker push agefos-pme/nginx-rancher-rp
+```
+
